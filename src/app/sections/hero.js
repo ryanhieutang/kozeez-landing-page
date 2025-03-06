@@ -48,7 +48,7 @@ const Hero = () => {
           className="absolute top-0 left-0 w-full h-full object-cover opacity-40"
         />
         
-        <div className="absolute justify-center pl-32 inset-0 flex flex-col text-white px-6 z-10">
+        <div className="absolute justify-center pl-12 md:pl-32 inset-0 flex flex-col text-white px-6 z-10">
           <div className="text-white">
             <h1 className="text-6xl font-extralight leading-tight opacity-80 tracking-wide">
               Stays Are Easy <br></br>With <span className="font-cormorant text-7xl opacity-100">Kozeez</span>
@@ -61,7 +61,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <a href="/" className="absolute top-0 left-0 z-20 pl-20 pt-16">
+        <a href="/" className="absolute top-0 left-0 z-20 pl-12 md:pl-20 pt-16">
           <img 
             src="/images/Kozeez Transparent Full.png" 
             alt="Company Logo" 
@@ -69,7 +69,7 @@ const Hero = () => {
           />
         </a>
 
-        <div className="absolute bottom-0 w-full bg-[#050712] border-b border-[#2F3034] text-white py-5 md:pr-24 flex justify-center md:justify-end space-x-10 text-xs md:text-sm font-normal z-10">
+        <div className="absolute bottom-0 w-full bg-[#050712] border-b border-[#2F3034] text-white py-5 md:pr-24 flex justify-center md:justify-end space-x-3 sm:space-x-5 md:space-x-10 text-xs md:text-sm font-normal z-10">
           <div className="hidden md:flex items-center space-x-2">
             <img src="/icons/map-pin.svg" alt="Location Icon" className="w-3 h-5 md:h-5 md:w-5" />
             <p>Sydney, Australia</p>
