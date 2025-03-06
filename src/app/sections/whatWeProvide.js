@@ -25,7 +25,10 @@ const steps = [
 
 const HowWeOperate = () => {
   return (
-    <section id="what-we-provide" className="px-6 md:px-16 py-16 flex text-white border-y border-[#2F3034] flex-col lg:flex-row lg:justify-between">
+<section 
+  id="what-we-provide" 
+  className="px-6 md:px-16 py-16 flex text-white border-y border-[#2F3034] flex-col lg:flex-row lg:justify-between max-w-7xl mx-auto lg:gap-16 xl:gap-32"
+>
       <div className="flex flex-col justify-between px-6 md:p-8">
         <div className="flex flex-row">
             <div className="mb-10 mr-28">

@@ -26,9 +26,9 @@ const AboutUs = () => {
         <p className="text-base text-white font-light mt-6">
         Whether you're here for work, a holiday or even a family visit, we’re dedicated to making your stay as Kozeez as possible.
         </p>
-        <button className="mt-12 border border-[#A78949] text-[#A78949] px-8 py-3 text-md font-medium hover:bg-gradient-to-r hover:from-[#C3A054] hover:via-[#BD9847] hover:via-[#DEC973] hover:via-[#CBB365] hover:to-[#C8AD62] hover:text-white">
+        <a className="mt-12 border border-[#A78949] text-[#A78949] px-8 py-3 text-md font-medium hover:bg-gradient-to-r hover:from-[#C3A054] hover:via-[#BD9847] hover:via-[#DEC973] hover:via-[#CBB365] hover:to-[#C8AD62] hover:text-white inline-flex justify-center whitespace-nowrap relative before:absolute before:inset-0 before:rounded-[inherit] before:bg-[linear-gradient(45deg,transparent_25%,theme(colors.white/.5)_50%,transparent_75%,transparent_100%)] before:bg-[length:250%_250%,100%_100%] before:bg-[position:200%_0,0_0] before:bg-no-repeat before:[transition:background-position_0s_ease] hover:before:bg-[position:-100%_0,0_0] hover:before:duration-[1500ms]" href="https://www.airbnb.com.au/users/show/682498186" target="_blank">
           Book Now
-        </button>
+        </a>
       </div>
     </section>
   );

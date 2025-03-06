@@ -70,7 +70,7 @@ const Hero = () => {
         </a>
 
         <div className="absolute bottom-0 w-full bg-[#050712] border-b border-[#2F3034] text-white py-5 md:pr-24 flex justify-center md:justify-end space-x-10 text-xs md:text-sm font-normal z-10">
-          <div className="flex items-center space-x-2">
+          <div className="hidden md:flex items-center space-x-2">
             <img src="/icons/map-pin.svg" alt="Location Icon" className="w-3 h-5 md:h-5 md:w-5" />
             <p>Sydney, Australia</p>
           </div>
