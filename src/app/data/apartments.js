@@ -34,25 +34,7 @@ const apartments = [
     rating: 5.0,
     featured: true,
     dateAdded: '2025-07-04'
-  },
-  {
-    id: 2,
-    title: 'Japandi Style Redfern Apartment w/ Private Balcony',
-    location: 'Redfern, Syd',
-    address: 'Pitt Street, Redfern',
-    image: '/images/apartments-home/DSC00954.webp',
-    calendarUrl: 'https://www.airbnb.com.au/calendar/ical/1455957887282137284.ics?s=c12c0bd871eed091182ba300a84d7070',
-    listingUrl: 'https://www.airbnb.com.au/h/japandi-redfern',
-    lat: -33.894623,
-    lng: 151.203063,
-    maxGuests: 2,
-    bedrooms: 1,
-    bathrooms: 1,
-    price: 260,
-    rating: 5.0,
-    featured: true,
-    dateAdded: '2025-07-04'
-  },
+  }
 ];
 
 export default apartments;
