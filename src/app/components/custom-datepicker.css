@@ -1,0 +1,61 @@
+/* custom-datepicker.css */
+
+.react-datepicker {
+  background-color: #050712 !important;
+  border: 1px solid #2F3034 !important;
+  color: white !important;
+  border-radius: 1rem;
+}
+
+.react-datepicker__header {
+  background-color: #050712 !important;
+  border-bottom: 1px solid #2F3034 !important;
+  color: white !important;
+}
+
+.react-datepicker__current-month,
+.react-datepicker__day-name {
+  color: #D0D0D1 !important;
+}
+
+.react-datepicker__day {
+  color: #D0D0D1 !important;
+}
+
+.react-datepicker__day--disabled {
+  color: #555 !important;
+  background-color: transparent !important;
+}
+
+.react-datepicker__triangle {
+  display: none;
+}
+
+.react-datepicker__day:hover {
+  background-color: transparent !important;
+  border-radius: 0 !important; /* Remove unwanted rounding */
+}
+
+.react-datepicker__day--selected {
+  background-color: transparent !important;
+  color: #D0D0D1 !important;
+}
+
+/* remove the blue/fill from the focused/preselected day */
+.react-datepicker__day--keyboard-selected {
+  background-color: transparent !important;
+  color: #D0D0D1 !important;
+}
+
+/* optional: don't emphasize "today" either */
+.react-datepicker__day--today {
+  background-color: transparent !important;
+  font-weight: 400 !important; /* default lib makes today bold */
+  color: #D0D0D1 !important;
+}
+
+/* keep hover neutral (no fill) */
+.react-datepicker__day:hover {
+  background-color: transparent !important;
+  border-radius: 0 !important;
+}

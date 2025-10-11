@@ -12,3 +12,36 @@ html {
 body {
   background-color: #050712;
 }
+
+.custom-marker-wrapper {
+  background-color: white;
+  border-radius: 9999px;
+  padding: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-marker-img {
+  width:24;
+  height: 24px;
+}
+
+html, body {
+  height: 100%;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+section {
+  scroll-snap-align: start;
+}
+
+[data-lenis-prevent] {
+  overscroll-behavior: contain;
+  scroll-behavior: auto !important;
+}
+

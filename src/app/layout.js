@@ -1,5 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import "lenis/dist/lenis.css";
+import LenisProvider from "./components/LenisProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,7 +16,8 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Kozeez - Designed with comfort, luxury and YOU in mind",
   description: "Stays are easy with Kozeez",
-  keywords: "Kozeez, vacation rentals, holiday stays, travel, Airbnb alternative, short-term rentals, hotel booking, accommodation, airbnb, suite, sydney",
+  keywords:
+    "Kozeez, vacation rentals, holiday stays, travel, Airbnb alternative, short-term rentals, hotel booking, accommodation, airbnb, suite, sydney",
   author: "Kozeez Team",
   applicationName: "Kozeez",
   generator: "Next.js",
@@ -36,7 +39,7 @@ export const metadata = {
     locale: "en_US",
   },
   icons: {
-    icon: "/icons/favicon.ico", // ✅ Correct
+    icon: "/icons/favicon.ico",
     shortcut: "/icons/favicon.ico",
     apple: "/icons/apple-touch-icon.png",
   },
@@ -47,13 +50,13 @@ export const viewport = {
   initialScale: 1.0,
 };
 
-export const themeColor = "#A78949"; // ✅ Corrected
+export const themeColor = "#A78949";
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        {children}
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}>
+        <LenisProvider>{children}</LenisProvider>
       </body>
     </html>
   );
