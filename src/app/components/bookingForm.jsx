@@ -171,7 +171,7 @@ export default function BookingFormModal({ apartment, onClose }) {
                 />
               </div>
 
-              <div className="flex-1">
+              <div className="flex flex-col">
                 <label className="text-sm font-medium">Check-out</label>
                 <input
                   name="checkout"
