@@ -86,13 +86,17 @@ export default function BookingFormModal({ apartment, onClose }) {
   };
 
   return (
-    <div className="fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm flex justify-center items-center overflow-hidden">
+    <div className="fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm flex justify-center items-center overflow-hidden px-10 md:px-0
+     onTouchMove={(e) => e.preventDefault()}"
+    >
       <div
         ref={modalRef}
         className="bg-[#050712] border border-[#2F3034] rounded-2xl w-full max-w-2xl text-white relative shadow-2xl flex flex-col max-h-[90vh]"
       >
         {/* Scrollable content */}
-        <div className="overflow-y-auto overscroll-contain touch-pan-y flex-1 p-6 sm:p-8 md:p-10 pt-12 custom-scroll">
+        <div className="overflow-y-auto overscroll-contain touch-pan-y flex-1 p-6 sm:p-8 md:p-10 pt-12 custom-scroll"
+          onTouchMove={(e) => e.stopPropagation()}
+        >
           {/* Close Button */}
           <button
             onClick={onClose}
@@ -110,13 +114,16 @@ export default function BookingFormModal({ apartment, onClose }) {
           {/* Specs */}
           <div className="flex flex-wrap items-center gap-4 sm:gap-6 text-sm text-white/80 mb-8">
             <div className="flex items-center gap-1">
-              <FaBed className="text-[#C3A054]" /> {apartment.bedrooms} Bedrooms
+              <FaBed className="text-[#C3A054]" /> {apartment.bedrooms}{' '}
+              {apartment.bedrooms === 1 ? 'Bedroom' : 'Bedrooms'}
             </div>
             <div className="flex items-center gap-1">
-              <FaBath className="text-[#C3A054]" /> {apartment.bathrooms} Baths
+              <FaBath className="text-[#C3A054]" /> {apartment.bathrooms}{' '}
+              {apartment.bathrooms === 1 ? 'Bath' : 'Baths'}
             </div>
             <div className="flex items-center gap-1">
-              <FaUserFriends className="text-[#C3A054]" /> {apartment.maxGuests} Guests
+              <FaUserFriends className="text-[#C3A054]" /> {apartment.maxGuests}{' '}
+              {apartment.maxGuests === 1 ? 'Guest' : 'Guests'}
             </div>
           </div>
 
@@ -151,8 +158,8 @@ export default function BookingFormModal({ apartment, onClose }) {
             </div>
 
             {/* Inline Inputs */}
-            <div className="flex flex-col sm:flex-row gap-4">
-              <div className="flex-1">
+            <div className="flex flex-col md:flex-row gap-4">
+              <div className="flex flex-col">
                 <label className="text-sm font-medium">Check-in</label>
                 <input
                   name="checkin"

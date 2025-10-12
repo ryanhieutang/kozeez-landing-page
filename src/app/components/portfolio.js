@@ -139,13 +139,12 @@ const PropertiesShowcase = () => {
         {properties.map((property, index) => (
           <a
             key={index}
-            href={property.link}
             target="_blank"
             rel="noopener noreferrer"
             className="block"
           >
             <div
-              className={`property-card property-card-${index} relative rounded-2xl overflow-hidden shadow-lg h-[420px] transform transition-transform duration-300 hover:scale-[1.01]`}
+              className={`property-card property-card-${index} relative rounded-2xl overflow-hidden shadow-lg h-[420px]`}
             >
               {/* Background image */}
               <Image

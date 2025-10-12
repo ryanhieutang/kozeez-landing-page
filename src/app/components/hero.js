@@ -192,8 +192,7 @@ gsap.fromTo(
             className="hero-button mt-6 w-fit bg-gradient-to-r from-[#C3A054] via-[#BD9847] to-[#C8AD62] 
                       text-white px-6 py-3 rounded-full text-lg inline-flex items-center justify-center 
                       whitespace-nowrap relative"
-            href="https://www.airbnb.com.au/users/show/682498186"
-            target="_blank"
+            href="/explore"
           >
             Book Now
           </a>

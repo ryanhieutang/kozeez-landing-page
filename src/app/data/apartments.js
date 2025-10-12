@@ -2,7 +2,7 @@ const apartments = [
   {
     id: 1,
     title: 'Cozy Urban Redfern Apt. w/ Designer Courtyard',
-    location: 'Redfern, Syd',
+    location: 'Redfern, Sydney',
     address: 'Pitt Street, Redfern',
     image: '/images/apartments-home/DSC09813.webp',
     calendarUrl: 'https://www.airbnb.com.au/calendar/ical/1370123590425909081.ics?s=70250e0aa709ae5722ed9cb609e8764b',
@@ -20,7 +20,7 @@ const apartments = [
   {
     id: 2,
     title: 'Japandi Style Redfern Apartment w/ Private Balcony',
-    location: 'Redfern, Syd',
+    location: 'Redfern, Sydney',
     address: 'Pitt Street, Redfern',
     image: '/images/apartments-home/DSC00954.webp',
     calendarUrl: 'https://www.airbnb.com.au/calendar/ical/1455957887282137284.ics?s=c12c0bd871eed091182ba300a84d7070',

@@ -359,9 +359,15 @@ export default function SearchPage() {
                 <p className="text-white/90 mb-2 text-sm sm:text-base font-light">{apt.location}</p>
               </div>
               <div className="flex flex-wrap items-center gap-3 sm:gap-6 text-xs sm:text-sm text-white font-light my-2">
-                <div className="flex items-center gap-1"><FaBed /> {apt.bedrooms} Beds</div>
-                <div className="flex items-center gap-1"><FaBath /> {apt.bathrooms} Baths</div>
-                <div className="flex items-center gap-1"><FaUserFriends /> {apt.maxGuests} Guests</div>
+                <div className="flex items-center gap-1">
+                  <FaBed /> {apt.bedrooms} {apt.bedrooms === 1 ? 'Bed' : 'Beds'}
+                </div>
+                <div className="flex items-center gap-1">
+                  <FaBath /> {apt.bathrooms} {apt.bathrooms === 1 ? 'Bath' : 'Baths'}
+                </div>
+                <div className="flex items-center gap-1">
+                  <FaUserFriends /> {apt.maxGuests} {apt.maxGuests === 1 ? 'Guest' : 'Guests'}
+                </div>
               </div>
             </div>
           </div>

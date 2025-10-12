@@ -122,14 +122,6 @@ const AboutUs = () => {
         <div className="about-cta flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 sm:gap-6">
           <a
             className="rounded-3xl px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-md font-medium bg-gradient-to-r from-[#C3A054] via-[#BD9847] via-[#DEC973] via-[#CBB365] to-[#C8AD62] text-white inline-flex justify-center whitespace-nowrap relative before:absolute before:inset-0 before:rounded-[inherit] before:bg-[linear-gradient(45deg,transparent_25%,theme(colors.white/.5)_50%,transparent_75%,transparent_100%)] before:bg-[length:250%_250%,100%_100%] before:bg-[position:200%_0,0_0] before:bg-no-repeat before:[transition:background-position_0s_ease] hover:before:bg-[position:-100%_0,0_0] hover:before:duration-[1500ms]"
-            href="https://www.airbnb.com.au/users/show/682498186"
-            target="_blank"
-          >
-            Book Now
-          </a>
-
-          <a
-            className="text-sm sm:text-md font-light text-white hover:text-[#DEC973] transition-colors"
             href="/explore"
           >
             Explore

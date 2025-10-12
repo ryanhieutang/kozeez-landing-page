@@ -149,28 +149,18 @@ useEffect(() => {
         <div className="relative w-full">
           <div className="overflow-hidden">
             <div
-              className="testimonial-track flex transition-transform duration-500 ease-out gap-6"
+              className="testimonial-track flex transition-transform duration-500 ease-out space-x-4 sm:space-x-6"
               style={{ transform: `translateX(-${trackShift}%)` }}
             >
+
               {testimonials.map((t, i) => (
                   <div
                     key={i}
-                    className="
-                      testimonial-card
-                      bg-[#17161A]
-                      rounded-2xl
-                      relative
-                      flex-shrink-0
-                      flex flex-col justify-between
-                      p-8 md:p-7 lg:p-8
-                      min-h-[280px] md:min-h-[300px] lg:min-h-[280px]
-                      max-h-[380px]
-                      w-[100%] sm:w-[48%] md:w-[31%]
-                      max-w-[480px]
-                    "
-                    style={{ flex: `0 0 ${cardWidth}%` }}
+                    className="testimonial-card bg-[#17161A] rounded-2xl relative flex-shrink-0 flex flex-col justify-between p-6 sm:p-7 md:p-8 min-h-[280px] w-full"
+                    style={{
+                      flex: `0 0 calc(${cardWidth}% - 1rem)` // small compensation for visual balance
+                    }}
                   >
-
                   <p className="text-white/80 text-base leading-relaxed mb-6 line-clamp-6">
                     “{t.quote}”
                   </p>
