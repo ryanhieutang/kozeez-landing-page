@@ -42,6 +42,27 @@ const testimonials = [
     avatar: "/images/testimonials/do.avif",
     rating: 5,
   },
+  {
+    quote:
+      "Kozeez's place was absolutely beautiful, and he was super responsive with any of my enquiries. I would definitely recommend this place to anyone else.",
+    name: "Joseph H.",
+    avatar: "/images/testimonials/joseph.avif",
+    rating: 5,
+  },
+  {
+    quote:
+      "Kozeez were the perfect host. They made sure we were comfortable and checked up on us. The place is quite ideal. Safe neighborhood. Really close to a Woolworth. The apartment feels like home. Super clean and welcoming.",
+    name: "Sangeeta N.",
+    avatar: "/images/testimonials/sangeeta.avif",
+    rating: 5,
+  },
+  {
+    quote:
+      "Great spot in Redfern. Plenty of pubs and food nearby. Host was very helpful with an early checkin after my flights changed.",
+    name: "David B.",
+    avatar: "/images/testimonials/david.avif",
+    rating: 5,
+  },
 ];
 
 const Testimonials = () => {
