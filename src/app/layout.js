@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Kozeez - Designed with comfort, luxury and YOU in mind",
-  description: "Stays are easy with Kozeez",
+  title: "Kozeez - Short-term Rental Accomodations",
+  description: "Designed with comfort, luxury and YOU in mind",
   keywords:
     "Kozeez, vacation rentals, holiday stays, travel, Airbnb alternative, short-term rentals, hotel booking, accommodation, airbnb, suite, sydney",
   author: "Kozeez Team",
@@ -29,14 +29,14 @@ export const metadata = {
     siteName: "Kozeez",
     images: [
       {
-        url: "https://kozeez.com/og-image.jpg",
-        width: 1200,
-        height: 630,
+        url: "https://kozeez.com/images/kozeez-image.png",
+        width: 1600,
+        height: 840,
         alt: "Kozeez – Effortless Stays",
       },
     ],
     type: "website",
-    locale: "en_US",
+    locale: "en_AU",
   },
   icons: {
     icon: "/icons/favicon.ico",
@@ -54,10 +54,24 @@ export const themeColor = "#A78949";
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}>
-        <LenisProvider>{children}</LenisProvider>
-      </body>
+    <html lang="en" suppressHydrationWarning>
+        <body className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}>
+          <main>
+            <LenisProvider>{children}</LenisProvider>
+          </main>
+        </body>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: "Kozeez",
+            url: "https://kozeez.com",
+            logo: "https://kozeez.com/icons/apple-touch-icon.png",
+          }),
+        }}
+      />
     </html>
   );
 }
