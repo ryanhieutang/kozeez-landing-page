@@ -89,7 +89,7 @@ const Navbar = ({ variant = "overlay" }) => {
       className={`${
         isOverlay
           ? "absolute top-12 left-0 px-14 bg-transparent"
-          : "relative bg-[#0A0C14] px-4 pb-12"
+          : "relative px-4 pb-12"
       } w-full z-50`}
     >
       <div className="flex items-center justify-between">
