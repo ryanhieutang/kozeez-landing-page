@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@vercel/speed-insights": "^1.2.0",
     "emailjs-com": "^3.2.0",
     "gsap": "^3.13.0",
     "ical": "^0.8.0",
