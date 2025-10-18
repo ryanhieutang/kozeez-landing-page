@@ -60,6 +60,7 @@ export default function RootLayout({ children }) {
           <main>
             <LenisProvider>{children}</LenisProvider>
           </main>
+          <SpeedInsights />
         </body>
       <script
         type="application/ld+json"
