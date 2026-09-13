@@ -26,6 +26,15 @@ const properties = [
       "A refined lower-ground apartment blending sculptural architecture, natural textures, and a private courtyard.",
     link: "https://www.airbnb.com.au/h/cozy-redfern"
   },
+  {
+    image: "/images/apartments-home/designer.avif",
+    category: "Designer",
+    title: "Designer 2BR Apt w/ Skyline Balcony & Prvt Parking",
+    date: "Jan 29, 2026",
+    description:
+      "A designer two-bedroom apartment with a skyline balcony, private parking, and a calm, minimalist interior.",
+    link: "https://www.airbnb.com.au/h/designer-2br-apt"
+  },
 ];
 
 const PropertiesShowcase = () => {
@@ -135,7 +144,7 @@ const PropertiesShowcase = () => {
 
 
       {/* Property Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl px-8 sm:px-28">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-8xl mx-auto px-8 sm:px-28">
         {properties.map((property, index) => (
           <a
             key={index}
@@ -177,7 +186,7 @@ const PropertiesShowcase = () => {
       {/* Book Now Button */}
       <Link href="/explore" className="flex justify-center mt-10">
         <button className="book-now-btn rounded-3xl border border-[#DDC872] text-[#DDC872] px-8 py-3 text-md font-medium hover:bg-gradient-to-r hover:from-[#C3A054] hover:via-[#BD9847] hover:via-[#DEC973] hover:via-[#CBB365] hover:to-[#C8AD62] hover:text-white inline-flex justify-center whitespace-nowrap relative before:absolute before:inset-0 before:rounded-[inherit] before:bg-[linear-gradient(45deg,transparent_25%,theme(colors.white/.5)_50%,transparent_75%,transparent_100%)] before:bg-[length:250%_250%,100%_100%] before:bg-[position:200%_0,0_0] before:bg-no-repeat before:[transition:background-position_0s_ease] hover:before:bg-[position:-100%_0,0_0] hover:before:duration-[1500ms]">
-          Explore
+          Explore All
         </button>
       </Link>
     </section>
