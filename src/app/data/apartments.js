@@ -53,7 +53,61 @@ const apartments = [
     featured: true,
     dateAdded: '2026-01-29'
   },
-    {
+  {
+    id: 9,
+    title: 'Japandi Style Mascot Apartment w/ Private Balcony',
+    location: 'Mascot, Sydney',
+    address: 'Mascot, Sydney',
+    image: '/images/apartments-home/id9.avif',
+    calendarUrl: '',
+    listingUrl: 'https://www.airbnb.com.au/rooms/1794656547879406634',
+    lat: -33.922410,
+    lng: 151.193090,
+    maxGuests: 4,
+    bedrooms: 2,
+    bathrooms: 1,
+    price: 342,
+    rating: 5.0,
+    featured: true,
+    dateAdded: '2026-11-06'
+  },
+  {
+    id: 10,
+    title: 'Cosy Mascot Stay | Near Airport w/ Patio + Parking',
+    location: 'Mascot, Sydney',
+    address: 'Mascot, Sydney',
+    image: '/images/apartments-home/id10.avif',
+    calendarUrl: '',
+    listingUrl: 'https://www.airbnb.com.au/rooms/1807770468614280909',
+    lat: -33.922660,
+    lng: 151.189500,
+    maxGuests: 4,
+    bedrooms: 2,
+    bathrooms: 2,
+    price: 407,
+    rating: 5.0,
+    featured: true,
+    dateAdded: '2026-11-06'
+  },
+  {
+    id: 11,
+    title: 'Cozy Modern North Sydney Apt. | Steps to Metro',
+    location: 'North Sydney, Sydney',
+    address: 'North Sydney, Sydney',
+    image: '/images/apartments-home/id11.avif',
+    calendarUrl: '',
+    listingUrl: 'https://www.airbnb.com.au/rooms/1810716212319281304',
+    lat: -33.834600,
+    lng: 151.207300,
+    maxGuests: 4,
+    bedrooms: 1,
+    bathrooms: 1,
+    price: 300,
+    rating: 5.0,
+    featured: true,
+    dateAdded: '2026-11-06'
+  },
+  {
     id: 4,
     title: 'Luxury Barangaroo Apt. w/ Harbour Views & Pool',
     location: 'Barangaroo, Sydney',
@@ -90,24 +144,6 @@ const apartments = [
     dateAdded: '2026-09-13'
   },
   {
-    id: 6,
-    title: 'Luxury 2BR Barangaroo Apt. w/ World-Class Harbour Views',
-    location: 'Barangaroo, Sydney',
-    address: 'Barangaroo, Sydney',
-    image: '/images/apartments-home/id6.avif',
-    calendarUrl: '',
-    listingUrl: '',
-    lat: -33.863000,
-    lng: 151.203300,
-    maxGuests: 4,
-    bedrooms: 2,
-    bathrooms: 2,
-    price: 260,
-    rating: 5.0,
-    featured: true,
-    dateAdded: '2026-09-13'
-  },
-    {
     id: 7,
     title: 'Stylish World Square Apt. w/ CBD Views',
     location: 'Sydney CBD',
@@ -143,24 +179,6 @@ const apartments = [
     featured: true,
     dateAdded: '2026-09-13'
   },
-  {
-    id: 9,
-    title: 'Spacious CBD Apt. w/ Free Parking near Central',
-    location: 'Haymarket, Sydney',
-    address: 'Haymarket, Sydney',
-    image: '/images/apartments-home/id9.avif',
-    calendarUrl: '',
-    listingUrl: '',
-    lat: -33.879250,
-    lng: 151.206650,
-    maxGuests: 4,
-    bedrooms: 1,
-    bathrooms: 1,
-    price: 260,
-    rating: 5.0,
-    featured: true,
-    dateAdded: '2026-09-13'
-  }
 ];
 
 export default apartments;
